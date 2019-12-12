@@ -10,7 +10,7 @@
     */
 
     $alihan = "Alihan Bayrak";
-    $mySite = "http://bil.184471049.wordpress.com";
+    $mySite = "http://bil184471049.wordpress.com";
     echo $mySite;
     //echo $alihan;
 
