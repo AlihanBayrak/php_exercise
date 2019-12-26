@@ -11,7 +11,8 @@
         fread() - tum icerigi okur
         fgets() - satir satir okur
         feof() - dosyanin sonuna gelinip gelinmedigini dondurur
-    */
+        filesize() - dosya karaker sayisini dondurur
+        */
     /*
         r - okumak icin ac
         r+ - okumak ve yazmak icin ac
@@ -21,7 +22,7 @@
         a+ - ikumak ve yazmak icin yaz
     */
 
-    $icerik = 'Bu bir yazi ornegidir/';
+    $icerik = 'Bu bir yazi ornegidir/'; 
     $dosya = fopen('test2.txt', 'w');
         fwrite($dosya, $icerik);
     fclose($dosya);
