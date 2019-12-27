@@ -13,7 +13,7 @@
             $_SESSION['zaman'] = time() + 20;
             $_SESSION['kullanici_adi'] = $uye['kullanici_adi'];
             // header() yonlendirme
-            header('Location:/ornek_uygulama/');
+            header('Location:../ornek_uygulama/');
         }
     }
 ?>
