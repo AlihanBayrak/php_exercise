@@ -2,6 +2,14 @@
 session_start();
 ob_start();
 require 'ayarlar.php';
+
+
+if (isset($_SESSION['zaman']) && time() > $_SESSION['zaman']){
+    session_destroy();
+    header('Location:/ornek_uygulama/oturum_sonlandi.php');
+} else {
+    $_SESSION['zaman'] = time() + 10;
+}
 ?>
 
 <!DOCTYPE html>
